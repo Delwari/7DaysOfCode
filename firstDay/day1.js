@@ -25,7 +25,6 @@ if (numeroDez == stringDez) {
   console.log('As variáveis numeroDez e stringDez não tem o mesmo valor')
 }
 
-document
 
 // ####### MELHOR RESPOSTA #######
 
