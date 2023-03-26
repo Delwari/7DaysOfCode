@@ -1,13 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="day2.css">
+    <title>Lógica JS 2/7: Variáveis</title>
+
 </head>
+
 <body>
-    
+    <main>
+        <section class="home " id="home-section">
+            <form action="" class="home__form">
+                <ul class="home__form__info">
+                    <li>
+                        <label for="homeForm">Qual o seu nome?</label>
+                        <input type="text" name="homeForm" id="name-user">
+                    </li>
+                    <li>
+                        <label for="age-user">Quantos anos você tem?</label>
+                        <input type="number" name="homeForm" id="age-user">
+                    </li>
+                    <li>
+                        <label for="lang-program-user">Qual linguagem de programação você está estudando?</label>
+                        <input type="text" name="homeForm" id="lang-program-user">
+                    </li>
+                    <li>
+                        <input type="button" value="Enviar" id="submit-info" class="home__form__btn"
+                            onclick="getElementHome()">
+                    </li>
+                </ul>
+            </form>
+        </section>
+
+        <section class="check hide" id="check-section">
+            <div class="check__msg" id="frt-msg"></div>
+            <form action="" class="check__form">
+                <dl class="check__form__info">
+                    <dt>
+                        Você gosta de estudar <span id="check-span"></span>?
+                    </dt>
+                    <div class="check__form__info__radios">
+                        <dd>
+                            <label for="">Sim</label>
+                            <input type="radio" value="yes" name="checkOpt" id="radio-y" checked>
+                        </dd>
+                        <dd>
+                            <label for="">Não</label>
+                            <input type="radio" value="no" name="checkOpt" id="radio-n">
+                        </dd>
+                    </div>
+                    <div class="test">
+                        <div class="check__msg2" id="scd__msg2"></div>
+                        <dd>
+                            <input type="button" value="Enviar" id="submit-checkOpt" class="check__form__btn"
+                                onclick="getRadioCheck()">
+                        </dd>
+                    </div>
+                </dl>
+            </form>
+        </section>
+    </main>
 </body>
 <script src="day2.js"></script>
+
 </html>
